@@ -65,7 +65,7 @@ a:hover {
 
 header {
   padding-top: 400px;
-  padding-bottom: 25px;
+  /* padding-bottom: 25px; */
   background: transparent url(../images/CaneFish.png) 50% 0 no-repeat;  
 }
 
@@ -217,26 +217,53 @@ ul, ol, dl {
 
 /* COMMON STYLES */
 
+.dash {
+    background-size: 100% 1px, 100% 1px, auto;
+    background-position: 50% 100%, 50% 100%, 50% 0;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-origin: padding-box, border-box, padding-box;
+    border-bottom: 1px solid transparent;
+            
+    background-image: 
+        linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0.1) 50%, rgba(0,0,0,0)), 
+        linear-gradient(0deg, rgba(255,255,255,0), rgba(255,255,255,0.8) 50%, rgba(255,255,255,0)), 
+        radial-gradient(50% 100%, ellipse cover, rgba(0,0,0, 0.05), rgba(0,0,0,0) 50%);
+    background-image: 
+        -o-linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0.1) 50%, rgba(0,0,0,0)), 
+        -o-linear-gradient(0deg, rgba(255,255,255,0), rgba(255,255,255,0.85) 50%, rgba(255,255,255,0)), 
+        -o-radial-gradient(50% 100%, ellipse cover, rgba(0,0,0, 0.05), rgba(0,0,0,0) 50%);
+    background-image: 
+        -moz-linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0.1) 50%, rgba(0,0,0,0)), 
+        -moz-linear-gradient(0deg, rgba(255,255,255,0), rgba(255,255,255,0.8) 50%, rgba(255,255,255,0)), 
+        -moz-radial-gradient(50% 100%, ellipse cover, rgba(0,0,0, 0.05), rgba(0,0,0,0) 50%);
+    background-image: 
+        -webkit-linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0.1) 50%, rgba(0,0,0,0)), 
+        -webkit-linear-gradient(0deg, rgba(255,255,255,0), rgba(255,255,255,0.8) 50%, rgba(255,255,255,0)), 
+        -webkit-radial-gradient(50% 100%, ellipse cover, rgba(0,0,0, 0.05), rgba(0,0,0,0) 50%);
+}
+
 hr {
-  height: 1px;
+  height: 50px;
   line-height: 1px;
-  margin: 1em 0 2em;
-  border: none;
-  /* background: transparent url('../images/hr.png') 50% 0 no-repeat; */
-	background-size: 100% 1px, 100% 1px, auto;
-        background-position: 50% 100%, 50% 100%, 50% 0;
-        background-repeat: no-repeat, no-repeat, no-repeat;
-        background-origin: padding-box, border-box, padding-box;
-        border-bottom: 1px solid transparent;
-        
-        background-image: 
-            -webkit-linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0.1) 50%, rgba(0,0,0,0)), 
-			-webkit-linear-gradient(0deg, rgba(255,255,255,0), rgba(255,255,255,0.8) 50%, rgba(255,255,255,0)), 
-            -webkit-radial-gradient(50% 100%, ellipse cover, rgba(0,0,0, 0.05), rgba(0,0,0,0) 50%);
-    
-            -o-linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0.1) 50%, rgba(0,0,0,0)), 
-            -o-linear-gradient(0deg, rgba(255,255,255,0), rgba(255,255,255,0.8) 50%, rgba(255,255,255,0)), 
-            -o-radial-gradient(50% 100%, ellipse cover, rgba(0,0,0, 0.05), rgba(0,0,0,0) 50%);  
+  margin: -40px 0 50px;
+  border: none;	           
+}
+
+section a { 
+    background-color: #F9FDA2;
+    /* border-bottom: 1px solid #DDDDDD; */
+    text-decoration: none;
+    color: #6d6d6d; 
+    -o-transition: all .6s ease-in-out;
+    -moz-transition: all .6s ease-in-out;
+    -webkit-transition: all .6s ease-in-out;
+}
+
+section a:hover, section a:focus { 
+    background: #efefef;
+    /* border-bottom: 1px solid #444444; */
+    /* color: #6d6d6d; */
+    color: #222222;
 }
 
 strong {
