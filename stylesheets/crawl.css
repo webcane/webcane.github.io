@@ -1,0 +1,98 @@
+/* ---------------------------------------------
+/* layout
+/* --------------------------------------------- */ 
+#content {
+  width: 960px;
+  margin: 0 auto;
+  /* border: 1px solid red; */
+  /* min-height: 450px; */
+}
+
+/* ---------------------------------------------
+/* crawl
+/* --------------------------------------------- */ 
+ul#crawl-menu {
+  padding-top: 120px;
+  /* margin-top: 100px; */
+  list-style: none;
+}
+ul#crawl-menu li, ul#crawl-menu li.box-shutter {
+  display: inline;
+  float: left;
+  width: 300px;
+  height: 253px;
+  border-radius: 16px; 
+  -moz-border-radius: 16px; 
+  -webkit-border-radius: 16px;
+  background: #fff url('../images/box_bg.png') repeat-x;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.3); 
+  -moz-box-shadow: 1px 1px 5px rgba(0,0,0,0.3); 
+  -webkit-box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+  margin-right: 30px;
+  padding-left: 0
+}
+ul#crawl-menu li.box-shutter {
+  position: relative;
+  top: 253px; /*всплывает снизу, уходит вниз */
+  /* без top // расскрывается по центру, ухот вниз */
+  /* top: 0; // всплывает сверху, уход вниз */
+  height: 0; /* чтобы всплывал с нижней границы */
+  /* height: 253px; */
+  background-image: url('../images/box_bg_gold.png');
+}
+
+ul#crawl-menu li.faq {
+  margin-right: 0;
+}
+  .box-cont {
+    position: absolute !important;
+    width: 300px !important;
+    cursor: default;
+  }
+    .box-cont span.box-image {
+      display: block; 
+      float: left;  
+      width: 136px;  height: 250px;
+      text-indent: -10000px;
+    }
+    .box-cont h2 {
+      float: left;
+      width: 100px;
+      padding: 10px 55px 0 0;
+      font-weight: bold;  
+      text-transform: uppercase;  
+      font-size: 20px;
+      font-family: Arial, Hortensia, Annabelle; 
+    }
+    .box-cont h2 > a {
+      color: #09c;
+      text-decoration: none;   
+    }
+    .box-cont h2 > a:hover {
+      color: #49b1c7;
+      /* color: #96e3fc; */
+    }
+    .box-cont p {
+      width: 145px; 
+      overflow: hidden; 
+      color: #000;
+      padding-top: 0px;
+      margin-bottom: 0px;
+      font-size: 14px;  
+    }
+    .clients .box-cont span {
+      background: url('../images/clients.png') no-repeat top left;
+    }
+    .works .box-cont span {
+      background: url('../images/works.png') no-repeat top left;
+    }
+    .faq .box-cont span {
+      background: url('../images/support.png') no-repeat top left;
+    }
+
+
+
+
+
+
+  
