@@ -204,7 +204,10 @@ pre {
   text-shadow: none;
   overflow: auto;
 }
-pre span.p, pre span.n {
+pre .p, pre .n, pre .n, pre .nd {
+  color: #000;	
+}
+pre .line {
   color: #000;	
 }
 pre code {
