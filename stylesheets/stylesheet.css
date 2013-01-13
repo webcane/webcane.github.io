@@ -289,6 +289,9 @@ td {
   text-align: center; 
   font-weight: 300;
 }
+td.line_data {
+  text-align: left;
+}
 
 form {
   background: #f2f2f2;
