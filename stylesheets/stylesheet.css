@@ -204,6 +204,9 @@ pre {
   text-shadow: none;
   overflow: auto;
 }
+pre span.p {
+  color: #000;	
+}
 pre code {
   color: #f2f2f2;
   background-color: #303030;
