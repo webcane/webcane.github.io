@@ -204,6 +204,12 @@ pre {
   text-shadow: none;
   overflow: auto;
 }
+pre .p, pre .n, pre .n, pre .nd {
+  color: #000;	
+}
+pre .line {
+  color: #000;	
+}
 pre code {
   color: #f2f2f2;
   background-color: #303030;
@@ -288,6 +294,9 @@ td {
   border: 1px solid #ebebeb;
   text-align: center; 
   font-weight: 300;
+}
+td.line_data {
+  text-align: left;
 }
 
 form {
