@@ -5,6 +5,9 @@
 # Enables or disables Jekyll from recreating the site when files are modified.
 auto: true
 
+# Changes the directory where Jekyll will look to transform files
+# source: .
+
 # Serve website from a given base URL
 # baseurl: /site
 
