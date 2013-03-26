@@ -5,6 +5,12 @@
 # Enables or disables Jekyll from recreating the site when files are modified.
 auto: true
 
+# Serve website from a given base URL
+# baseurl: /site
+
+# Sets site.url, useful for environment switching
+url: http://webcane.github.com
+
 # Controls the URLs that posts are generated with
 permalink: /:categories/:title
 
