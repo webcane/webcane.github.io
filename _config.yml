@@ -1,19 +1,36 @@
-# standard jekyll configuration
+#
+# webcane jekyll configuration
+#
 
-permalink: none
+# Enables or disables Jekyll from recreating the site when files are modified.
+auto: true
+
+# Controls the URLs that posts are generated with
+permalink: /:categories/:title
+
+# Enables highlighting
 pygments: true
-exclude: ['Rakefile', 'README.md']
-markdown: rdiscount
-root_dir: "Jekyll-Bootstrap-Template"
 
+exclude: ['Rakefile', 'README.md']
+
+# Uses [rdiscount, kramdown, redcarpet, maruku] Markdown
+markdown: rdiscount
+
+# rdiscount:
+#  extensions: []
+
+#
 # configuration required for some pages
+#
 
 domain: webcane.github.com
 title: Webcane on GitHub
 author: cane
 email: webcane@ya.ru
 
+#
 # configuration for ehancements, uncomment to enable
+#
 
 # feedburner:
 #   id: feedburnerid
@@ -26,3 +43,5 @@ email: webcane@ya.ru
 
 # disqus:
 #   id: disqusid
+
+
