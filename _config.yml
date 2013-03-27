@@ -32,16 +32,18 @@ markdown: rdiscount
 # configuration required for some pages
 #
 
-domain: webcane.github.com
-title: cane on web pages
-description: cane on web pages
-author: mikahil niedre
-email: webcane@ya.ru
-#root_dir:
-#branch: master
-
-fonts:
-  first: https://fonts.googleapis.com/css?family=Chivo:900
+site: 
+	domain: webcane.github.com
+	title: cane on web pages
+	description: cane on web pages
+	author: mikahil niedre
+	email: webcane@ya.ru
+	
+	#root_dir:
+	#branch: master
+	
+	fonts:
+	  first: https://fonts.googleapis.com/css?family=Chivo:900
 
 
 #

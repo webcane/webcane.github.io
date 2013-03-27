@@ -3,39 +3,23 @@
   <head>
   
     <meta charset='utf-8'>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    {% if site.description %}
-    <meta name="description" content="{{ site.description }}" />
-    {% endif %}
-    
-    {% if site.author %}
-    <meta name="author" content="{{ site.author }}" />
-    {% endif %} 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    {% if site.description %}<meta name="description" content="{{ site.description }}" />{% endif %}
+    {% if site.author %}<meta name="author" content="{{ site.author }}" />{% endif %} 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    
-    {% if site.fonts %}    
-    <link href='{{ site.fonts.first }}' rel='stylesheet' type='text/css'>
-    {% endif %} 
+    {% if site.fonts %}<link href='{{ site.fonts.first }}' rel='stylesheet' type='text/css'>{% endif %} 
         
     <link rel="stylesheet" type="text/css" href="{% if site.root_dir %}{{ site.root_dir }}{% endif %}/stylesheets/bootstrap.css" media="screen" />  
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-             
-    <link rel="stylesheet" media="screen" href="{% if site.root_dir %}{{ site.root_dir }}{% endif %}/stylesheets/styles.css" type="text/css" />      
-    
+    <![endif]-->             
+    <link rel="stylesheet" media="screen" href="{% if site.root_dir %}{{ site.root_dir }}{% endif %}/stylesheets/styles.css" type="text/css" />    
     <!-- <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" /> -->
-
     <link rel="shortcut icon" href="images/favicon.png"/>
     <title>{% if page.title %}{{ page.title }}{% endif %}</title>
-
-    {% if site.feedburner %}
-    <link href="http://feeds.feedburner.com/{{ site.feedburner.id }}" rel="alternate" title="{{ site.title }}" type="application/atom+xml" />
-    {% endif %}
-    
+    {% if site.feedburner %}<link href="http://feeds.feedburner.com/{{ site.feedburner.id }}" rel="alternate" title="{{ site.title }}" type="application/atom+xml" />{% endif %}    
     {% if site.google_analytics %}
     <!-- google analytics async -->
     <script type="text/javascript">
