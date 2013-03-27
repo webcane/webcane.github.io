@@ -1,57 +1,16 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8'>
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="cane on web pages">
-    <meta name="author" content="mikahil niedre">
-    
-    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
-    
-    <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.css" media="screen" />  
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    
-    <link rel="stylesheet" type="text/css" href="stylesheets/style.css" media="screen" />
-            
-    <!-- <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" /> -->
+---
+layout: default
+description: A description about my blog homepage
+---
 
-    <link rel="shortcut icon" href="images/favicon.png"/>
-    <title>webcane</title>
-  </head>
-
-  <body>
-
-	<!-- Part 1: Wrap all page content here -->
-	<div id="wrap">
-		<div id="backlight">
-			<div class="container">
-
-				<!-- Begin page content -->
-				<header>
-					<h1>Webcane.github.com</h1>
-					<h2>cane on web pages</h2>
-				</header>
-				
-				<hr class="dash" />
-
-			</div><!-- .container -->
-		</div>
-	</div>
-	<!-- #wrapper -->
-
-	<!-- The last part: sticky footer -->
-	<footer>
-		<div class="container">
-			<div class="octocat">
-				<a href="http://github.com/">GitHub</a>
-			</div>
-		</div>
-	</footer>
-
-</body>
-</html>
+{% for post in site.posts %}
+<article>
+  <header>
+    <h2>
+        <a href="{{ post.url }}" rel="bookmark" title="Permanent link to ">{{ post.title }}</a>
+    </h2>
+    <h5><time>{{ post.date | date: '%B' }} {{ post.date | date: '%e' }}, {{ post.date | date: '%Y' }}</time></h5>
+  </header>
+  {{ post.content }}
+</article>
+{% endfor %}

@@ -33,9 +33,15 @@ markdown: rdiscount
 #
 
 domain: webcane.github.com
-title: Webcane on GitHub
-author: cane
+title: cane on web pages
+description: cane on web pages
+author: mikahil niedre
 email: webcane@ya.ru
+#root_dir:
+
+fonts:
+  first: https://fonts.googleapis.com/css?family=Chivo:900
+
 
 #
 # configuration for ehancements, uncomment to enable
