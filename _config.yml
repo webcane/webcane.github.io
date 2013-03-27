@@ -38,7 +38,7 @@ description: cane on web pages
 author: mikahil niedre
 email: webcane@ya.ru
 #root_dir:
-#branch: gh-pages
+#branch: master
 
 fonts:
   first: https://fonts.googleapis.com/css?family=Chivo:900
