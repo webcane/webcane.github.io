@@ -28,7 +28,6 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-    width:100%;
 	line-height: 1;
 }
 ol, ul {
@@ -65,42 +64,24 @@ a:hover {
 }
 
 header {
-  padding-top: 400px;
-  /* padding-bottom: 25px; */
-  background: transparent url(../images/CaneFish.png) 50% 0 no-repeat;  
+  padding-top: 35px;
+  padding-bottom: 25px;
 }
 
 header h1 {
   font-family: 'Chivo', 'Helvetica Neue', Helvetica, Arial, serif; font-weight: 900;
   letter-spacing: -1px;
-  font-size: 52px;
+  font-size: 48px;
   color: #303030;
   line-height: 1.2;
-
-  /* color:#fff; */  
-  /* text-shadow: 0 0 5px white; */
-/*	color: #a0a0a0;  
-	text-shadow:0px 4px 3px rgba(0,0,0,0.4),
-				0px 8px 13px rgba(0,0,0,0.1),
-				0px 18px 23px rgba(0,0,0,0.1);  */
-				
-	/* background-color: #666666;
-	-webkit-background-clip: text;
-	-moz-background-clip: text;
-	background-clip: text;
-	color: transparent; */
-	/* background: #474747; */
-	color: #666;
-	text-shadow: 0px 2px 3px #bbb;
 }
 
 header h2 {
   letter-spacing: -1px;
-  font-size: 26px;
+  font-size: 24px;
   color: #aaa;
   font-weight: normal;
   line-height: 1.3;
-  text-shadow: 0 0 1px #fff;  
 }
 
 #container {
@@ -110,7 +91,7 @@ header h2 {
 
 .inner {
   width: 620px;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 
 #container .inner img {
@@ -204,12 +185,6 @@ pre {
   text-shadow: none;
   overflow: auto;
 }
-pre .p, pre .n, pre .n, pre .nd {
-  color: #000;	
-}
-pre .line {
-  color: #000;	
-}
 pre code {
   color: #f2f2f2;
   background-color: #303030;
@@ -224,53 +199,13 @@ ul, ol, dl {
 
 /* COMMON STYLES */
 
-.dash {
-    background-size: 100% 1px, 100% 1px, auto;
-    background-position: 50% 100%, 50% 100%, 50% 0;
-    background-repeat: no-repeat, no-repeat, no-repeat;
-    background-origin: padding-box, border-box, padding-box;
-    border-bottom: 1px solid transparent;
-            
-    background-image: 
-        linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0.1) 50%, rgba(0,0,0,0)), 
-        linear-gradient(0deg, rgba(255,255,255,0), rgba(255,255,255,0.8) 50%, rgba(255,255,255,0)), 
-        radial-gradient(50% 100%, ellipse cover, rgba(0,0,0, 0.05), rgba(0,0,0,0) 50%);
-    background-image: 
-        -o-linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0.1) 50%, rgba(0,0,0,0)), 
-        -o-linear-gradient(0deg, rgba(255,255,255,0), rgba(255,255,255,0.85) 50%, rgba(255,255,255,0)), 
-        -o-radial-gradient(50% 100%, ellipse cover, rgba(0,0,0, 0.05), rgba(0,0,0,0) 50%);
-    background-image: 
-        -moz-linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0.1) 50%, rgba(0,0,0,0)), 
-        -moz-linear-gradient(0deg, rgba(255,255,255,0), rgba(255,255,255,0.8) 50%, rgba(255,255,255,0)), 
-        -moz-radial-gradient(50% 100%, ellipse cover, rgba(0,0,0, 0.05), rgba(0,0,0,0) 50%);
-    background-image: 
-        -webkit-linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0.1) 50%, rgba(0,0,0,0)), 
-        -webkit-linear-gradient(0deg, rgba(255,255,255,0), rgba(255,255,255,0.8) 50%, rgba(255,255,255,0)), 
-        -webkit-radial-gradient(50% 100%, ellipse cover, rgba(0,0,0, 0.05), rgba(0,0,0,0) 50%);
-}
-
 hr {
-  height: 50px;
+  height: 1px;
   line-height: 1px;
-  margin: -40px 0 50px;
-  border: none;	           
-}
-
-section a { 
-    background-color: #F9FDA2;
-    /* border-bottom: 1px solid #DDDDDD; */
-    text-decoration: none;
-    color: #6d6d6d; 
-    -o-transition: all .6s ease-in-out;
-    -moz-transition: all .6s ease-in-out;
-    -webkit-transition: all .6s ease-in-out;
-}
-
-section a:hover, section a:focus { 
-    background: #efefef;
-    /* border-bottom: 1px solid #444444; */
-    /* color: #6d6d6d; */
-    color: #222222;
+  margin-top: 1em;
+  padding-bottom: 1em;
+  border: none;
+  background: transparent url('../images/hr.png') 50% 0 no-repeat;
 }
 
 strong {
@@ -295,9 +230,6 @@ td {
   text-align: center; 
   font-weight: 300;
 }
-td.line_data {
-  text-align: left;
-}
 
 form {
   background: #f2f2f2;
@@ -313,7 +245,7 @@ h1 {
 } 
 
 h2 {
-  font-size: 28px;
+  font-size: 22px;
   font-weight: bold;
   color: #303030;
   margin-bottom: 8px;
@@ -321,13 +253,13 @@ h2 {
 
 h3 {
   color: #d5000d;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: bold;
   margin-bottom: 8px;
 } 
  
 h4 {
-  font-size: 18px;
+  font-size: 16px;
   color: #303030;
   font-weight: bold;
 } 
@@ -376,15 +308,11 @@ dl dt {
   color: #303030;
 }
 
-#main_content {
-  min-height: 220px;	
-}
-
 footer {
-  /* background: transparent url('../images/hr.png') 0 0 no-repeat; */
+  background: transparent url('../images/hr.png') 0 0 no-repeat;
   margin-top: 40px;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
   font-size: 13px;
   color: #aaa;
 }
@@ -395,31 +323,6 @@ footer a {
 footer a:hover {
   color: #444;
 }
-
-.octocat, .octocat a {
-	display: block;
-	width: 100%;
-	height: 49px;
-	-webkit-transition: all .2s ease-in-out;
-	-moz-transition: all .2s ease-in-out;
-	-o-transition: all .2s ease-in-out;
-	transition: all .2s ease-in-out; 
-}
-.octocat {
-	background: url(../images/octocat-mask.png) no-repeat center;
-	opacity: .5;
-}
-.octocat:hover {
-	opacity: 1;
-}
-.octocat a {
-	background: url(../images/octocat.png) no-repeat center;
-	text-indent: -9999px;
-	opacity: 0;
-}
-.octocat a:hover {
-	opacity: 1;
-} 
 
 /* MISC */
 .clearfix:after {
