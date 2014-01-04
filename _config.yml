@@ -3,7 +3,7 @@
 #
 
 # Enables or disables Jekyll from recreating the site when files are modified.
-## auto: true
+# auto: true
 
 # Directory where Jekyll will look to transform files.
 # source: .
@@ -15,7 +15,7 @@
 safe: true
 
 # encoding
-encoding: UTF-8
+# encoding: UTF-8
 
 # Serve website from a given base URL
 # baseurl: /
@@ -24,8 +24,8 @@ encoding: UTF-8
 
 
 # Sets site.url, useful for environment switching
-# url: http://webcane.github.io
-url: http://localhost:4000
+url: http://webcane.github.io
+# url: http://localhost:4000
 
 # Controls the URLs that posts are generated with
 permalink: /:categories/:title
@@ -38,7 +38,7 @@ exclude: ['Rakefile', 'README.md']
 
 # include
 # dotfiles are excluded by default.
-include: ['.htaccess']
+# include: ['.htaccess']
 
 # Uses [rdiscount, kramdown, redcarpet, maruku] Markdown
 markdown: rdiscount
