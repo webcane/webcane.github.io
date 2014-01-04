@@ -3,24 +3,42 @@
 #
 
 # Enables or disables Jekyll from recreating the site when files are modified.
-auto: true
+## auto: true
 
-# Changes the directory where Jekyll will look to transform files
+# Directory where Jekyll will look to transform files.
 # source: .
 
+# Directory where Jekyll will write files
+# destination: ./_site
+
+# Disable custom plugins.
+safe: true
+
+# encoding
+encoding: UTF-8
+
 # Serve website from a given base URL
-# baseurl: /site
+# baseurl: /
+# host: 0.0.0.0
+# port: 4000
+
 
 # Sets site.url, useful for environment switching
-url: http://webcane.github.io
+# url: http://webcane.github.io
+url: http://localhost:4000
 
 # Controls the URLs that posts are generated with
 permalink: /:categories/:title
 
 # Enables highlighting
-pygments: true
+pygments: false
 
+# exclude
 exclude: ['Rakefile', 'README.md']
+
+# include
+# dotfiles are excluded by default.
+include: ['.htaccess']
 
 # Uses [rdiscount, kramdown, redcarpet, maruku] Markdown
 markdown: rdiscount
@@ -60,5 +78,3 @@ email: webcane@ya.ru
 
 # disqus:
 #   id: disqusid
-
-
