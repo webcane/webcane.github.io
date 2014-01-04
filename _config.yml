@@ -12,7 +12,7 @@ auto: true
 # baseurl: /site
 
 # Sets site.url, useful for environment switching
-url: http://webcane.github.com
+url: http://webcane.github.io
 
 # Controls the URLs that posts are generated with
 permalink: /:categories/:title
@@ -32,7 +32,7 @@ markdown: rdiscount
 # configuration required for some pages
 #
  
-domain: webcane.github.com
+domain: webcane.github.io
 title: cane on web pages
 description: cane on web pages
 author: mikahil niedre
