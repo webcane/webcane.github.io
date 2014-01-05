@@ -1,0 +1,24 @@
+.octocat, .octocat a {
+	display: block;
+	width: 100%;
+	height: 49px;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out; 
+}
+.octocat {
+	background: url(../images/octocat-mask.png) no-repeat center;
+	opacity: .5;
+}
+.octocat:hover {
+	opacity: 1;
+}
+.octocat a {
+	background: url(../images/octocat.png) no-repeat center;
+	text-indent: -9999px;
+	opacity: 0;
+}
+.octocat a:hover {
+	opacity: 1;
+}
