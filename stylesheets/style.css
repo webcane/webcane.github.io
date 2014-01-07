@@ -80,10 +80,10 @@ body {
 
 .inner {
 	margin: 0 auto;
+	max-width: 960px;
 }
 
 #backlight {
-	width: 960px;
 	background: transparent url(../images/highlight-bg.jpg) 50% 0 no-repeat;
 	min-height: 100%;
 	height: auto !important;
@@ -160,4 +160,20 @@ footer a,#footer a {
 
 footer a:hover,#footer a:hover {
 	color: #666;
+}
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px) 
+and (max-device-width : 480px)
+and (max-width: 640px) {
+	.inner {
+		max-width: 320px;
+	}
+	.logo { 
+		padding: 15px 0 30px 0;
+		height: 100px;
+		background: transparent url(../images/CaneFish_small.png) no-repeat center center;
+	}
 }
