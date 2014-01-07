@@ -167,7 +167,7 @@ footer a:hover,#footer a:hover {
 /* Smartphones (portrait and landscape) ----------- */
 
 @media only screen
-and (max-width: 960px) {
+and (max-width: 900px) {
 	.logo {
 		padding: 20px 0 50px 0;
 		height: 200px;
