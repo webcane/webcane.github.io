@@ -164,6 +164,7 @@ footer a:hover,#footer a:hover {
 
 
 /* Smartphones (portrait and landscape) ----------- */
+
 @media only screen
 and (max-width: 640px) {
 	.inner {
@@ -172,7 +173,7 @@ and (max-width: 640px) {
 	.logo { 
 		padding: 15px 0 30px 0;
 		height: 100px;
-		background: transparent url(../images/CaneFish_middle.png) no-repeat center center;
+		background: transparent url(../images/CaneFish_small.png) no-repeat center center;
 	}
 }
 
@@ -184,6 +185,6 @@ and (max-width: 960px) {
 	.logo { 
 		padding: 20px 0 50px 0;
 		height: 200px;
-		background: transparent url(../images/CaneFish_midle.png) no-repeat center center;
+		background: transparent url(../images/CaneFish_middle.png) no-repeat center center;
 	}
 }
