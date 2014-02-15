@@ -1,0 +1,397 @@
+/* my custom styles */
+
+/* LAYOUT STYLES */
+html,body {
+	height: 100%;
+	/* The html and body elements cannot have any padding or margin. */
+	margin: 0;
+	padding: 0;	
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  /* remove unnecessary gorizontal scroll */
+  overflow: hidden;
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+
+/* links */
+a {
+	color: #7c65a5;
+	text-decoration: none !important;
+	outline:none !important;
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+	font-family: 'PT Sans', sans-serif;		
+}
+a:hover { 
+	color: #555555;
+}
+
+p {
+	font: 20px georgia, "times new roman", times, serif;
+	color: #505050;
+}
+
+
+h1, h2, h3, h4 {
+	font-family: 'Helvetica Neue', helvetica, sans-serif;
+	text-transform: uppercase;
+	padding: 0;
+	letter-spacing: 2px;
+	color: #505050;
+}
+
+
+h1 {
+	margin: 0;
+	text-transform: none;
+	font-weight:400;
+	font-size: 76px;
+	color: #fff;
+}
+h2 {
+	margin: 66px 0 44px;
+	font-weight: 700;
+	font-size: 42px;	
+}
+h3 {
+	margin:0 0 22px;
+	padding:0;
+	font-weight: 400;
+	font-size: 24px;
+}
+h4 {
+	margin:0 0 20px;
+	text-align: center;
+	font-weight: 400;
+	font-size: 17px;
+}
+
+
+/*  */
+.dash {
+	background-size: 100% 1px, 100% 1px, auto;
+	background-position: 50% 100%, 50% 100%, 50% 0;
+	background-repeat: no-repeat, no-repeat, no-repeat;
+	background-origin: padding-box, border-box, padding-box;
+	border-bottom: 1px solid transparent;
+	background-image: linear-gradient(0deg, rgba(0, 0, 0, 0),
+		rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0) ),
+		linear-gradient(0deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8)
+		50%, rgba(255, 255, 255, 0) ),
+		radial-gradient(50% 100%, ellipse cover, rgba(0, 0, 0, 0.05),
+		rgba(0, 0, 0, 0) 50% );
+	background-image: -o-linear-gradient(0deg, rgba(0, 0, 0, 0),
+		rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0) ),
+		-o-linear-gradient(0deg, rgba(255, 255, 255, 0),
+		rgba(255, 255, 255, 0.85) 50%, rgba(255, 255, 255, 0) ),
+		-o-radial-gradient(50% 100%, ellipse cover, rgba(0, 0, 0, 0.05),
+		rgba(0, 0, 0, 0) 50% );
+	background-image: -moz-linear-gradient(0deg, rgba(0, 0, 0, 0),
+		rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0) ),
+		-moz-linear-gradient(0deg, rgba(255, 255, 255, 0),
+		rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) ),
+		-moz-radial-gradient(50% 100%, ellipse cover, rgba(0, 0, 0, 0.05),
+		rgba(0, 0, 0, 0) 50% );
+	background-image: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0),
+		rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0) ),
+		-webkit-linear-gradient(0deg, rgba(255, 255, 255, 0),
+		rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) ),
+		-webkit-radial-gradient(50% 100%, ellipse cover, rgba(0, 0, 0, 0.05),
+		rgba(0, 0, 0, 0) 50% );
+}
+
+hr {
+	height: 50px;
+	line-height: 1px;
+	margin: -40px 0 50px;
+	border: none;
+}
+
+.page_section {
+	
+}
+
+/* ____________________ Home ____________________ */
+
+#home {
+	overflow:hidden;
+	position:relative;
+	padding:0;
+	background: #e7e7e7 url(../images/body-bg.png) 0 0 repeat;
+}
+
+	.home_container {
+		margin:0 auto;
+	}
+	
+	#home .welcome_logo {
+		position: relative;
+		z-index: 1;
+		text-align: center;
+	}
+	
+	#backlight {
+		background: transparent url(../images/highlight-bg.jpg) 50% 0 no-repeat;
+		min-height: 100%;
+		height: auto !important;
+		height: 100%;
+	}
+	
+	.logo {
+		width: 100%;
+		/* calculate padding via script automatically depends on windows size */
+		/* padding: 50px 0 110px 0; */
+		height: 400px;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-image: url(../images/CaneFish.png);
+	}
+	
+	/* Set the fixed height of the footer here */
+	.welcome_footer {
+		margin-top: -80px;
+		height: 80px;
+		
+		position: relative;
+		z-index: 2;
+		text-align: center;
+	}
+	
+	.welcome_footer hr {
+		margin: 0;
+	}
+	  
+	/* letters_wave */
+	.letters_wave {
+		text-align: center;
+		color: #878787;
+	}
+	.letters_wave > span {
+	  	margin: 0 4px 0;
+	}
+	.letters_wave > span > span {
+	    display: inline-block;
+	}
+	
+
+
+/* ___________________ //About ___________________ */
+
+#about {
+	padding-bottom: 150px;
+}
+
+	#about h2 {
+		/* margin-top: 68px; */
+	}
+
+	.author_foto img {
+		width: 318px;
+		height: 318px;
+		margin: 35px 20px 10px 0;
+		border-radius: 50%;
+		
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-image: url(../images/mustache.jpg);	
+	}	
+	
+	.author_words p {
+		/* background-color: #F8F8F8; */
+		line-height: 1.6;		
+	}
+	.author_words a {
+		font: 20px georgia, "times new roman", times, serif;
+	}
+	.author_words > h3 {
+		padding-top: 32px;
+		font-weight: 700;
+	}
+
+
+
+/* ___________________ //Portfolio ___________________ */
+
+#portfolio {
+    color: #929191;	
+	/* background-color: #282828; */
+	background-color: #f1f2f3;
+}
+
+	#portfolio h2 {
+		color: #c8c8c8;
+	}
+	
+	p.portfolio_description {
+		color: #9b9a9a;
+	}
+
+
+	/* __________ Filter __________ */
+	#portfolio_filter {
+		padding: 7px 0 13px;
+		margin-bottom: 37px;
+		font-size: 14px;
+	}
+	#portfolio_filter li {
+		display:inline-block;
+	}
+	#portfolio_filter a {
+		display:block;
+		margin:0 20px;
+		padding:0;
+		text-transform: uppercase;
+		line-height:20px;
+		color:#797979;
+		cursor:pointer;
+	}
+	#portfolio_filter a.selected,
+	#portfolio_filter a:hover {
+		color:#f85931;
+	}
+	
+	
+	/* __________ Grid __________ */
+
+	#portfolio_grid {
+		/* border: 1px solid red; */	
+		/* set padding 40px for child elements */
+		margin-left: -40px;
+		margin-right: -40px;
+	}
+	.mixitup_fade {
+		/* initially if mixitup working */
+		opacity: 0;
+		display: none;	
+		/*	
+		denny attributes:
+		position: absolute;
+		float: left;
+		float: right
+		*/
+	}
+	#portfolio_grid .mix {
+		margin: 0;		
+		padding: 80px 40px;
+	}
+	
+	#portfolio_grid .mix a {
+		/* important for transform scaled images */
+		display: block;
+		overflow: hidden;
+		outline: 0;
+		text-decoration: none;		
+	}	
+	
+	
+	#portfolio_grid .mix img {
+		display: block;
+		/* показать изображение во всю ширину, ничего не скрывая */
+		/* side-effect подрагивание в следующих колонках при наведении */
+		/* width: 100%; */
+		/* max-width: 100%; */
+		/* background-position: top center; */
+	}
+	
+	#portfolio_grid .mix a img {
+		opacity: 0.85;
+		filter: alpha(opacity=85);
+		-webkit-transform: scale(1,1);
+		-moz-transform: scale(1,1);
+		-ms-transform: scale(1,1);
+		-o-transform: scale(1,1);
+		transform: scale(1,1);
+		-webkit-transition-duration: 200ms;
+		-moz-transition-duration: 200ms;
+		-o-transition-duration: 200ms;
+		transition-duration: 200ms;
+		-webkit-transition-timing-function: ease-out;
+		-moz-transition-timing-function: ease-out;
+		-o-transition-timing-function: ease-out;
+		transition-timing-function: ease-out;
+	}	
+	#portfolio_grid .mix a:hover img {
+		opacity: 1;
+		filter: alpha(opacity=100);
+		-webkit-transform: scale(1.05,1.05);
+		-moz-transform: scale(1.05,1.05);
+		-ms-transform: scale(1.05,1.05);
+		-o-transform: scale(1.05,1.05);
+		transform: scale(1.05,1.05);
+		-webkit-transition-duration: 200ms;
+		-moz-transition-duration: 200ms;
+		-o-transition-duration: 200ms;
+		transition-duration: 200ms;
+		-webkit-transition-timing-function: ease-out;
+		-moz-transition-timing-function: ease-out;
+		-o-transition-timing-function: ease-out;
+		transition-timing-function: ease-out;
+	}
+	
+	#portfolio_grid .mix a.info {
+		font: 11px 400 sans-serif;
+		padding: 20px 0;
+		color: #444546;
+		letter-spacing: 2px;
+		text-transform: uppercase;	
+		border: 0;
+		border-bottom: 1px solid #eee;
+	}
+	
+	#portfolio_grid .mix a.info .year {
+		color: #aaa;
+		margin-left: 10px;
+	}	
+
+
+
+	
+	
+/* ____________________ RESPONSIVE ____________________ */
+/* Large devices (large desktops, 1200px and up) */
+/* @media (min-width: 1200px) { } */
+
+
+/* Medium devices (desktops, 992px and up) */
+/* @media (max-width: 960px) { */
+@media (max-width: 992px) {
+	.logo {
+		height: 200px;
+		padding: 20px 0 50px 0;
+		background-image: url(../images/CaneFish_middle.png);
+	}
+	
+	.author_foto img {
+		width: 212px;
+		height: 212px;
+		background-image: url(../images/mustache_middle.jpg);		
+	}
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 640px) {
+	.logo {
+		height: 100px;	
+		padding: 15px 0 30px 0;
+		background-image: url(../images/CaneFish_small.png);
+	}
+	.author_foto img {
+		margin: 0 auto;	
+	}
+	/*
+	.author_foto > img {
+		width: 106px;
+		height: 106px;
+		background-image: url(../images/mustache_small.jpg);		
+	}*/	
+}
+		

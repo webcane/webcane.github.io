@@ -1,0 +1,133 @@
+/* $Id: styles.css */
+/**
+/* Warning: this may add 1-2 pixels to bottom of page */
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  line-height: 1;
+}
+
+
+
+#round-1 {
+  float: left;
+  margin: 20px;
+  width: 100px;
+  height: 200px;
+  background-color: #a72525;
+  border-radius: 100px 0px 0px 0px;
+}
+#round-2 {
+  float: left;
+  margin: 20px;
+  width: 100px;
+  height: 200px;
+  background-color: #a72525;
+  border-radius: 0px 100px 0px 0px;
+}
+#round-3 {
+  float: left;
+  margin: 20px;
+  width: 100px;
+  height: 200px;
+  background-color: #a72525;
+  border-radius: 0px 0px 100px 0px;
+}
+#round-4 {
+  float: left;
+  margin: 20px;
+  width: 100px;
+  height: 200px;
+  background-color: #a72525;
+  border-radius: 0px 0px 0px 100px;
+}
+#round-5 {
+  float: left;
+  margin: 20px;
+  width: 100px;
+  height: 200px;
+  background-color: #a72525;
+  border-radius: 100px 0px 0px 100px;
+}
+#round-6 {
+  float: left;
+  margin: 20px;
+  width: 100px;
+  height: 200px;
+  background-color: #a72525;
+  border-radius: 0px 100px 100px 0px;
+}
+#round-7 {
+  float: left;
+  margin: 20px;
+  width: 100px;
+  height: 200px;
+  background-color: #a72525;
+  border-radius: 0px 0px 100px 100px;
+}
+#round-8 {
+  float: left;
+  margin: 20px;
+  width: 100px;
+  height: 200px;
+  background-color: #a72525;
+  border-radius: 100px 100px 0px 0px;
+}
+#round-9 {
+  float: left;
+  margin: 20px;
+  width: 100px;
+  height: 200px;
+  background-color: #a72525;
+  border-radius: 100px 0px 100px 0px;
+}
+#round-10 {
+  float: left;
+  margin: 20px;
+  width: 100px;
+  height: 200px;
+  background-color: #a72525;
+  border-radius: 0px 100px 0px 100px;
+}
+#round-11 {
+  float: left;
+  margin: 20px;
+  width: 100px;
+  height: 200px;
+  background-color: #a72525;
+  border-radius: 100px 100px 0px 100px;
+}
+#round-12 {
+  float: left;
+  margin: 20px;
+  width: 100px;
+  height: 200px;
+  background-color: #a72525;
+  border-radius: 100px 0px 100px 100px;
+}
+#round-13 {
+  float: left;
+  margin: 20px;
+  width: 100px;
+  height: 200px;
+  background-color: #a72525;
+  border-radius: 100px 100px 100px 0px;
+}
+#round-14 {
+  float: left;
+  margin: 20px;
+  width: 100px;
+  height: 200px;
+  background-color: #a72525;
+  border-radius: 0px 100px 100px 100px;
+}
+#round-15 {
+  float: left;
+  margin: 20px;
+  width: 100px;
+  height: 200px;
+  background-color: #a72525;
+  border-radius: 100px 100px 100px 100px;
+}
+

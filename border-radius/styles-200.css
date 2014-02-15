@@ -1,0 +1,145 @@
+/* $Id: styles.css */
+/**
+/* Warning: this may add 1-2 pixels to bottom of page */
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  line-height: 1;
+}
+
+#round-1 {
+  float: left;
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  background-color: #fff;
+  border-radius: 200px 0px 0px 0px;
+  border-top: 3px #a72525 solid;
+}
+#round-2 {
+  float: left;
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  background-color: #fff;
+  border-radius: 0px 200px 0px 0px;
+  border-top: 3px #a72525 solid;
+}
+#round-3 {
+  float: left;
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  background-color: #fff;
+  border-radius: 0px 0px 200px 0px;
+  border-top: 3px #a72525 solid;
+}
+#round-4 {
+  float: left;
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  background-color: #fff;
+  border-radius: 0px 0px 0px 200px;
+  border-top: 3px #a72525 solid;
+}
+#round-5 {
+  float: left;
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  background-color: #fff;
+  border-radius: 200px 0px 0px 200px;
+  border-top: 3px #a72525 solid;
+}
+#round-6 {
+  float: left;
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  background-color: #fff;
+  border-radius: 0px 200px 200px 0px;
+  border-top: 3px #a72525 solid;
+}
+#round-7 {
+  float: left;
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  background-color: #fff;
+  border-radius: 0px 0px 200px 200px;
+  border-top: 3px #a72525 solid;
+}
+#round-8 {
+  float: left;
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  background-color: #fff;
+  border-radius: 200px 200px 0px 0px;
+  border-top: 3px #a72525 solid;
+}
+#round-9 {
+  float: left;
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  background-color: #fff;
+  border-radius: 200px 0px 200px 0px;
+  border-top: 3px #a72525 solid;
+}
+#round-10 {
+  float: left;
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  background-color: #fff;
+  border-radius: 0px 200px 0px 200px;
+  border-top: 3px #a72525 solid;
+}
+#round-11 {
+  float: left;
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  background-color: #fff;
+  border-radius: 200px 200px 0px 200px;
+  border-top: 3px #a72525 solid;
+}
+#round-12 {
+  float: left;
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  background-color: #fff;
+  border-radius: 200px 0px 200px 200px;
+  border-top: 3px #a72525 solid;
+}
+#round-13 {
+  float: left;
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  background-color: #fff;
+  border-radius: 200px 200px 200px 0px;
+  border-top: 3px #a72525 solid;
+}
+#round-14 {
+  float: left;
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  background-color: #fff;
+  border-radius: 0px 200px 200px 200px;
+  border-top: 3px #a72525 solid;
+}
+#round-15 {
+  float: left;
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  background-color: #fff;
+  border-radius: 200px 200px 200px 200px;
+  border-top: 3px #a72525 solid;
+}

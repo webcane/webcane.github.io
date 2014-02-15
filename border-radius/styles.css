@@ -1,0 +1,427 @@
+/* $Id: styles.css */
+/**
+/* Warning: this may add 1-2 pixels to bottom of page */
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  line-height: 1;
+}
+
+
+#round-1 {
+  float: left;
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  background-color: #a72525;
+  border-radius: 100px 0px 0px 0px;
+}
+#round-2 {
+  float: left;
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  background-color: #a72525;
+  border-radius: 0px 100px 0px 0px;
+}
+#round-3 {
+  float: left;
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  background-color: #a72525;
+  border-radius: 0px 0px 100px 0px;
+}
+#round-4 {
+  float: left;
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  background-color: #a72525;
+  border-radius: 0px 0px 0px 100px;
+}
+#round-5 {
+  float: left;
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  background-color: #a72525;
+  border-radius: 100px 0px 0px 100px;
+}
+#round-6 {
+  float: left;
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  background-color: #a72525;
+  border-radius: 0px 100px 100px 0px;
+}
+#round-7 {
+  float: left;
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  background-color: #a72525;
+  border-radius: 0px 0px 100px 100px;
+}
+#round-8 {
+  float: left;
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  background-color: #a72525;
+  border-radius: 100px 100px 0px 0px;
+}
+#round-9 {
+  float: left;
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  background-color: #a72525;
+  border-radius: 100px 0px 100px 0px;
+}
+#round-10 {
+  float: left;
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  background-color: #a72525;
+  border-radius: 0px 100px 0px 100px;
+}
+#round-11 {
+  float: left;
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  background-color: #a72525;
+  border-radius: 100px 100px 0px 100px;
+}
+#round-12 {
+  float: left;
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  background-color: #a72525;
+  border-radius: 100px 0px 100px 100px;
+}
+#round-13 {
+  float: left;
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  background-color: #a72525;
+  border-radius: 100px 100px 100px 0px;
+}
+#round-14 {
+  float: left;
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  background-color: #a72525;
+  border-radius: 0px 100px 100px 100px;
+}
+#round-15 {
+  float: left;
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  background-color: #a72525;
+  border-radius: 100px 100px 100px 100px;
+}
+
+
+
+
+/*
+#round { 
+  display: block;
+  float: left;
+  margin: 20px;
+  width: 200px; 
+  height: 200px; 
+  background-color: #a72525; 
+  border-radius: 0px 0px 100px 0px;
+}
+
+#round-1 { 
+  float: left;
+  margin: 20px;
+  width: 200px; 
+  height: 200px; 
+  background-color: #a72525; 
+  border-radius: 0px 0px 100px 0px;
+}
+#round-2 { 
+  float: left;
+  margin: 20px;
+  width: 200px; 
+  height: 200px; 
+  background-color: #a72525; 
+  border-radius: 100px;
+}
+#round-3 { 
+  float: left;
+  margin: 20px;
+  width: 200px; 
+  height: 200px; 
+  background-color: #a72525; 
+  border-radius: 100px 0px 100px 0px;
+}
+
+#round-4 {
+  float: left;
+  margin: 20px;
+  width: 200px; 
+  height: 200px; 
+  background-color: #efefef;
+  border: 3px #a72525 solid; 
+  border-radius: 100px;
+}
+
+#round-5 {
+  float: left;
+  margin: 20px;
+  width: 200px; 
+  height: 200px; 
+  background-color: #efefef;
+  border: 3px #a72525 solid; 
+  border-radius: 0px 100px 0px 100px;
+}
+
+#round-6 {
+  float: left;
+  margin: 20px;
+  width: 100px; 
+  height: 200px; 
+  background-color: #a72525;
+  border-radius: 200px 0 0 200px;
+}
+
+#round-7 {
+  float: left;
+  margin: 20px;
+  width: 200px; 
+  height: 100px; 
+  background-color: #a72525;
+  border-radius: 0 0 200px 200px;
+}
+
+
+#round-8 {
+  float: left;
+  margin: 20px;
+  width: 200px; 
+  height: 100px; 
+  background-color: #a72525;
+  border-radius: 200px 200px 0 0;
+}
+
+#round-9 {
+  margin: 20px;
+  width: 200px; 
+  height: 200px; 
+  background-color: #a72525;
+  border-radius: 200px 0 0 0;
+}
+#round-10 {
+  float: left;
+  margin: 20px;
+  width: 200px; 
+  height: 200px; 
+  background-color: #fff;
+  border-top: 3px #a72525 solid;
+  border-radius: 200px 0 0 0;  
+}
+#round-11 {
+  float: left;
+  margin: 20px;
+  width: 200px; 
+  height: 200px; 
+  background-color: #fff;
+  border-left: 3px #a72525 solid;
+  border-radius: 200px 0 0 0;  
+}
+#round-12 {
+  float: left;
+  margin: 20px;
+  width: 200px; 
+  height: 200px; 
+  background-color: #fff;
+  border-top: 3px #a72525 solid;
+  border-left: 3px #a72525 solid;
+  border-radius: 200px 0 0 0;  
+}
+
+#round-13 {
+  float: left;
+  margin: 20px;
+  width: 200px; 
+  height: 200px; 
+  background-color: #fff;
+  border-top: 3px #a72525 solid;
+  border-left: 3px #a72525 solid;
+  border-right: 3px #a72525 solid;
+  border-radius: 200px 200px 0 0; 
+  background-color: #fff;   
+}
+
+#round-14 {
+  float: left;
+  margin: 20px;
+  width: 200px; 
+  height: 200px; 
+  background-color: #fff;
+  border-top: 3px #a72525 solid;
+  border-left: 3px #a72525 solid;
+  border-right: 3px #a72525 solid;
+  border-radius: 0 200px 200px 0; 
+  background-color: #fff;   
+}
+
+#round-15 {
+  float: left;
+  margin: 20px;
+  width: 200px; 
+  height: 200px; 
+  background-color: #fff;
+  border-top: 3px #a72525 solid;
+  border-left: 3px #a72525 solid;
+  border-right: 3px #a72525 solid;
+  border-radius: 0 0 200px 200px; 
+  background-color: #fff;   
+}
+
+#round-16 {
+  float: left;
+  margin: 20px;
+  width: 200px; 
+  height: 200px; 
+  background-color: #fff;
+  border-top: 3px #a72525 solid;
+  border-left: 3px #a72525 solid;
+  border-right: 3px #a72525 solid;
+  border-radius: 200px 0 0 200px;
+  background-color: #fff;   
+}
+
+#round-17 {
+  float: left;
+  margin: 20px;
+  width: 200px; 
+  height: 200px; 
+  background-color: #fff;
+  border: 3px #a72525 solid;
+  border-radius: 0 200px 0 200px;
+  background-color: #fff;   
+}
+
+#round-18 {
+  float: left;
+  margin: 20px;
+  width: 200px; 
+  height: 200px; 
+  background-color: #fff;
+  border-bottom: 3px #a72525 solid;
+  border-right: 3px #a72525 solid;
+  border-radius: 0 200px 200px 200px;
+  background-color: #fff;   
+}
+
+#round-19 {
+  float: left;
+  margin: 20px;
+  width: 200px; 
+  height: 200px; 
+  background-color: #fff;
+  border-top: 3px #a72525 solid;
+  border-left: 3px #a72525 solid;
+  border-radius: 0 200px 200px 200px;
+  background-color: #fff;   
+}
+
+#round-20 {
+  float: left;
+  margin: 20px;
+  width: 200px; 
+  height: 200px; 
+  background-color: #fff;
+  border-bottom: 3px #a72525 solid;
+  border-radius: 0 200px 200px 200px;
+  background-color: #fff;   
+}
+
+#round-21 {
+  float: left;
+  margin: 20px;
+  width: 200px; 
+  height: 200px; 
+  background-color: #fff;
+  border-top: 3px #a72525 solid;
+  border-radius: 200px;
+  background-color: #fff;   
+}
+
+#round-22 {
+  float: left;
+  margin: 20px;
+  width: 200px; 
+  height: 200px; 
+  background-color: #fff;
+  border-top: 3px #a72525 solid;
+  border-bottom: 3px #a72525 solid;
+  border-radius: 0 200px 0 200px;
+  background-color: #fff;   
+}
+
+#round-23 {
+  float: left;
+  margin: 20px;
+  width: 200px; 
+  height: 200px; 
+  background-color: #fff;
+  border-top: 3px #a72525 solid;
+  border-left: 3px #a72525 solid;
+  border-radius: 0 200px 0 200px;
+  background-color: #fff;   
+}
+
+#round-24 {
+  float: left;
+  margin: 20px;
+  width: 200px; 
+  height: 200px; 
+  background-color: #fff;
+  border-right: 3px #a72525 solid;
+  border-bottom: 3px #a72525 solid;
+  border-radius: 0 200px 0 200px;
+  background-color: #fff;   
+}
+
+
+#round-25 {
+  float: left;
+  margin: 20px;
+  width: 200px; 
+  height: 200px; 
+  background-color: #fff;
+  border-top: 6px #a72525 solid;
+  border-left: 6px #a72525 solid;
+  border-radius: 200px 200px 0 200px;
+  background-color: #fff;   
+}
+
+
+#round-26 {
+  float: left;
+  margin: 20px;
+  width: 200px; 
+  height: 200px; 
+  background-color: #fff;
+  border-top: 6px #e5e5e5 solid;
+  border-left: 6px #e1e1e1 solid;
+  border-radius: 200px 200px 0 200px;
+  border-shadow: #000 0 10px 0;
+  box-shadow-bottom: 0px 2px 4px rgba(0,0,0,0.7);
+  background-color: #fff;   
+} */

@@ -2,7 +2,7 @@
    $.fn.crawl = function(options) {
    
   /* var settings = $.extend({}, $.fn.crawl.defaults, options); */
-  var settings = $.extend({ duration: 600,height: 'auto', shutter: 'box-shutter' }, options || {});
+  var settings = $.extend({ duration: 600, height: 'auto', shutter: 'box-shutter' }, options || {});
     /* 
       options = $.extend({  
          duration: 600,

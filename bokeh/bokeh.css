@@ -1,0 +1,60 @@
+/*
+  Author: Cane
+*/
+/* border:1px solid red; */
+
+/* -=- reset -=- */
+* {
+	margin: 0;
+	padding: 0;
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, p, blockquote, table, th, td {
+	margin: 0;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+	outline: none;
+}
+a:hover {
+	border: none;
+}
+
+/* __general */
+body {
+	/* font-size: 15px; */
+	background: #f1f1f1;
+ 	font: 15px Georgia, "Lucida Sans Unicode", arial,  sherif;
+	margin: 0 auto;
+}
+h1 {
+	font: bold 65px/60px Helvetica, Arial, Sans-serif;
+	text-align: center;
+	color: #eee;
+	text-shadow: 0px 2px 6px #333;
+}
+h2 a {
+	display: block;
+	text-decoration: none;
+	margin: 0 0 30px 0;
+	font: italic 45px Georgia, Times, Serif;
+	text-align: center;
+	color: #bfe1f1;
+	text-shadow: 0px 2px 6px #333;
+}
+h2 a:hover {
+	color: #90bcd0;
+}
+
+/* WRAPPER */
+#wrapper {
+	width: 800px;
+	margin: 40px auto;
+}
+/* BOKEHS */
+#bokehs {
+}
+.bokeh {
+	position: absolute;
+	z-index: -1;
+}

@@ -1,11 +1,48 @@
+
+
+
 /* ---------------------------------------------
 /* layout
 /* --------------------------------------------- */ 
-#content {
-  width: 960px;
-  margin: 0 auto;
-  /* border: 1px solid red; */
-  /* min-height: 450px; */
+
+/*
+body {
+  font-size: 16px;
+  line-height: 1.5; 
+  background: #e7e7e7 url(body-bg.png) 0 0 repeat;
+  font-family: Helvetica, Arial, serif;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+  color: #6d6d6d;
+}
+*/
+
+.home_container {
+  width: 960px; 
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #303030;
+  margin-top: 0px;
+  margin-bottom: 8px;
+} 
+
+ul, ol, dl {
+  margin-bottom: 20px;
+}
+
+p {
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+ 
+a {
+  text-decoration: none;
+}
+
+p a {
+  font-weight: 400;
 }
 
 /* ---------------------------------------------
@@ -13,8 +50,6 @@
 /* --------------------------------------------- */ 
 ul#crawl-menu {
   padding-top: 120px;
-  /* margin-top: 100px; */
-  list-style: none;
 }
 ul#crawl-menu li, ul#crawl-menu li.box-shutter {
   display: inline;
@@ -24,7 +59,7 @@ ul#crawl-menu li, ul#crawl-menu li.box-shutter {
   border-radius: 16px; 
   -moz-border-radius: 16px; 
   -webkit-border-radius: 16px;
-  background: #fff url('../images/box_bg.png') repeat-x;
+  background: #fff url('box_bg.png') repeat-x;
   box-shadow: 1px 1px 5px rgba(0,0,0,0.3); 
   -moz-box-shadow: 1px 1px 5px rgba(0,0,0,0.3); 
   -webkit-box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
@@ -38,7 +73,7 @@ ul#crawl-menu li.box-shutter {
   /* top: 0; // всплывает сверху, уход вниз */
   height: 0; /* чтобы всплывал с нижней границы */
   /* height: 253px; */
-  background-image: url('../images/box_bg_gold.png');
+  background-image: url('box_bg_gold.png');
 }
 
 ul#crawl-menu li.faq {
@@ -81,13 +116,13 @@ ul#crawl-menu li.faq {
       font-size: 14px;  
     }
     .clients .box-cont span {
-      background: url('../images/clients.png') no-repeat top left;
+      background: url('clients.png') no-repeat top left;
     }
     .works .box-cont span {
-      background: url('../images/works.png') no-repeat top left;
+      background: url('works.png') no-repeat top left;
     }
     .faq .box-cont span {
-      background: url('../images/support.png') no-repeat top left;
+      background: url('support.png') no-repeat top left;
     }
 
 
