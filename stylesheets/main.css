@@ -26,7 +26,7 @@ html,body {
 a {
 	color: #7c65a5;
 	text-decoration: none !important;
-	outline:none !important;
+	outline: none !important;
 	-webkit-appearance: none;
 	-webkit-border-radius: 0;
 	font-family: 'PT Sans', sans-serif;		
@@ -172,6 +172,10 @@ hr {
 	  
 	/* letters_wave */
 	.letters_wave {
+		font-family: 'Chivo', Helvetica, Arial, sans-serif;
+		font-size: 11px;
+		font-weight: 200;
+		text-transform: uppercase;
 		text-align: center;
 		color: #878787;
 	}
