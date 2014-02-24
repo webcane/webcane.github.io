@@ -353,9 +353,62 @@ hr {
 	}	
 
 
+	
 
-	
-	
+/* ___________________ //contact ___________________ */
+#contact {
+	padding-bottom: 150px;
+}
+
+		.contact-box {
+			margin-left: 0;
+			margin-right: 0;
+			background-color: #fff;
+			border: 1px #ddd solid;
+			border-radius: 4px;
+			box-shadow: none;
+		}
+		.contact-box .glyphicon {
+			font-weight: 700;
+			font-size: 32px;
+		}
+		
+		.contact-box .table>tbody>tr:nth-child(1)>td{
+			border-top: none;
+			padding-top: 10px;
+		}
+		
+		
+
+
+/* ___________________ //footer ___________________ */
+
+#footer {
+	/* border-top: 1px solid #ddd; */
+	/* position: fixed; */
+	bottom: 0;
+	width: 100%;
+	/* Set the fixed height of the footer here */
+	height: 100px;
+	background-color: #111;
+}
+
+/* fence */
+#footer:before {
+	/* Set the footer height here */
+	display: block;
+	content: " ";
+	height: 50px;
+	background-size: 50px 100%;	
+	background-image: linear-gradient(-45deg, transparent 50%, #fff 50%), linear-gradient(45deg, transparent 50%, #fff 50%);
+}
+
+	#copy {
+		color: #f1f2f3;
+		margin: 20px 0;
+	}
+
+
 /* ____________________ RESPONSIVE ____________________ */
 /* Large devices (large desktops, 1200px and up) */
 /* @media (min-width: 1200px) { } */
