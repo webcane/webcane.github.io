@@ -8,6 +8,14 @@ html,body {
 	padding: 0;	
 }
 
+::selection {
+	/* background: #90bee4; */
+	background: #c1dbf2;
+	}
+::-moz-selection {
+	background: #90bee4;
+}
+
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
   display: table;
@@ -172,7 +180,7 @@ hr {
 	  
 	/* letters_wave */
 	.letters_wave {
-		font-family: 'Chivo', Helvetica, Arial, sans-serif;
+		/* font-family: 'Chivo', Helvetica, Arial, sans-serif; */
 		font-size: 11px;
 		font-weight: 200;
 		text-transform: uppercase;
@@ -232,7 +240,12 @@ hr {
 }
 
 	#portfolio h2 {
-		color: #c8c8c8;
+		background-color: #a8a8a8;
+		-webkit-background-clip: text;
+		-moz-background-clip: text;
+		background-clip: text;
+		color: transparent;
+		text-shadow: rgba(255,255,255, 0.5) 0px 1px 1px;
 	}
 	
 	p.portfolio_description {
@@ -257,10 +270,20 @@ hr {
 		line-height:20px;
 		color:#797979;
 		cursor:pointer;
+
+		-webkit-transition-duration: 2s;
+		-moz-transition-duration: 2s;
+		-o-transition-duration: 2s;
+		transition-duration: 2s;
 	}
 	#portfolio_filter a.selected,
 	#portfolio_filter a:hover {
-		color:#f85931;
+		color: #428bca;
+
+		-webkit-transition-duration: 1s;
+		-moz-transition-duration: 1s;
+		-o-transition-duration: 1s;
+		transition-duration: 1s;
 	}
 	
 	
@@ -295,7 +318,6 @@ hr {
 		outline: 0;
 		text-decoration: none;		
 	}	
-	
 	
 	#portfolio_grid .mix img {
 		display: block;
@@ -349,7 +371,21 @@ hr {
 		text-transform: uppercase;	
 		border: 0;
 		border-bottom: 1px solid #eee;
+		
+		-webkit-transition-duration: 2s;
+		-moz-transition-duration: 2s;
+		-o-transition-duration: 2s;
+		transition-duration: 2s;		
 	}
+	
+	#portfolio_grid .mix a.info:hover {
+		color: #428bca;	
+		
+		-webkit-transition-duration: 1s;
+		-moz-transition-duration: 1s;
+		-o-transition-duration: 1s;
+		transition-duration: 1s;		
+	}	
 	
 	#portfolio_grid .mix a.info .year {
 		color: #aaa;
