@@ -1,0 +1,48 @@
+/* v.1 links */
+a {
+	text-decoration: none !important;
+	outline: none !important;
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+}
+
+a.shutter {
+	color: #7c65a5;
+	display: inline-block;
+	text-decoration: none;
+	overflow: hidden;
+	vertical-align: top; /* or bottom */
+	perspective: 600px;
+	perspective-origin: 50% 50%;
+}
+
+a.shutter:hover {
+	color: #555555;
+}
+
+a.shutter:hover>span {
+	background: #7c65a5;
+	transform: translate3d(0px, 0px, -30px) rotateX(90deg);
+}
+
+a.shutter>span {
+	display: block;
+	position: relative;
+	padding: 0 3px;
+	transition: all 0.5s ease;
+	transform-origin: 50% 0%;
+	transform-style: preserve-3d;
+}
+
+a.shutter>span:after {
+	content: attr(data-title);
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	padding: 0 3px;
+	color: #fff;
+	background: #7c65a5;
+	transform-origin: 50% 0%;
+	transform: translate3d(0px, 105%, 0px) rotateX(-90deg);
+}
