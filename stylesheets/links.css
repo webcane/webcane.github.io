@@ -6,13 +6,12 @@
 	@version 1.0
  */
 a.shutter {
-	text-decoration: none !important;
-	outline: none !important;
-	-webkit-appearance: none;
-	-webkit-border-radius: 0;
 	color: #7c65a5;
 	display: inline-block;
 	text-decoration: none;
+	outline: none;
+	appearance: none;
+	border-radius: 0;	
 	overflow: hidden;
 	vertical-align: top; /* or bottom */
 	perspective: 600px;
@@ -35,7 +34,7 @@ a.shutter>span {
 	transition: all 0.5s ease;
 	transform-origin: 50% 0%;
 	transform-style: preserve-3d;
-	text-shadow: none !important;
+	text-shadow: none;
 }
 
 a.shutter>span:after {
