@@ -1,4 +1,10 @@
-/* v.1 links */
+/**
+	Defines shutter link style. 
+	inspiredly with http://codepen.io/sebastianekstrom/pen/jDmKo
+	
+	@author Mikhail Niedre
+	@version 1.0
+ */
 a {
 	text-decoration: none !important;
 	outline: none !important;
