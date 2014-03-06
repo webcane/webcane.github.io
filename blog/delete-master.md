@@ -3,8 +3,9 @@
  * create new branch. for example `gh-pages`
  ![](images/create-new-branch.png)
  
- * switch to new branch (make it general)
- ![](images/switch-to-branch.png)
+ * set new branch as general
+ ![](images/choose-settings.png)
+ ![](images/choose-branch.png)
  
  * open branches area
  ![](images/branches-area.png)
