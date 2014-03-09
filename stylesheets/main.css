@@ -226,7 +226,7 @@ hr {
 		/* margin-top: 68px; */
 	}
 
-	.author_foto img {
+	.author_foto > img {
 		width: 318px;
 		height: 318px;
 		margin: 35px 20px 10px 0;
@@ -282,24 +282,21 @@ hr {
 		font-size: 14px;
 	}
 		#portfolio_filter li {
-			display:inline-block;
+			display:inline-block;			
+			margin: 0 20px;
+			padding: 0;
+			text-transform: uppercase;
+			cursor: pointer;
+			color: #428bca;
 		}
-		
-			#portfolio_filter a {
-				margin: 0 20px;
-				padding: 0;
-				text-transform: uppercase;
-				cursor: pointer;
-				color: #428bca;
-			}
-			
-			#portfolio_filter a.shutter:hover>span {
+					
+ 			#portfolio_filter .shutter:hover>span {
 				background: #428bca;
 			}
 			
-			#portfolio_filter a.shutter>span:after {
+			#portfolio_filter .shutter>span:after {
 				background: #428bca;
-			}
+			} 
 
 	/* __________ Grid __________ */
 	#portfolio_grid {
@@ -551,5 +548,9 @@ hr {
 		height: 106px;
 		background-image: url(../images/mustache_small.jpg);		
 	}*/	
+	
+	#portfolio_filter li {
+		margin: 0 10px;
+	}
 }
 		

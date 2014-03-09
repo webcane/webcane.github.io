@@ -6,15 +6,13 @@
 	<!-- <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"> -->
 	
 	<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
-	<meta name="viewport" content="width=device-width, initial-scale=auto">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> -->
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	
 	<meta name="description" content="webcane pages">
 	<meta name="keywords" content="web design, web development, css, html, css3, html5, javascript, jquery, java, eclipse">
 	<meta name="author" content="mikhail niedre">
-	 
-	<!-- <base href="http://webcane.github.io/"> -->
 	
 	<meta property="og:description" content="webcane pages">
 	<meta property="og:type" content="website">
@@ -70,7 +68,7 @@
 				<div class="welcome_footer">
 					<hr class="dash animated bounceInUp" />
 	
-					<a href="#about" class="letters_wave"> 
+					<a href="#about" title="open site" class="letters_wave"> 
 						<span id="word_1">
 							<span class="d3 animated bounceInUp">c</span>
 							<span class="d2 animated bounceInUp">a</span>
@@ -118,7 +116,7 @@
 	      			<div class="row">
 	      			
 	      				<div class="author_foto col-12 col-sm-4 text-center">
-	      					<img src="images/mustache.jpg" alt="author foto" />
+	      					<img src="" alt="" />
 	      				</div>
 							
 	      				<div class="author_words col-12 col-sm-7">
@@ -165,15 +163,15 @@
 				<div class="container-fluid">
 					<div class="filter_controls text-center">
 					
-						<ul id="portfolio_filter" class="option-set"> 
-							<li><a href="#portfolio_filter" class="filter shutter" data-filter="all"><span data-title="all">all</span></a></li>
-							<li><a href="#portfolio_filter" class="filter shutter" data-filter="jquery"><span data-title="jquery">jquery</span></a></li>
-							<li><a href="#portfolio_filter" class="filter shutter" data-filter="javascript"><span data-title="javascript">javascript</span></a></li>
-							<li><a href="#portfolio_filter" class="filter shutter" data-filter="java"><span data-title="java">java</span></a></li>
-							<li><a href="#portfolio_filter" class="filter shutter" data-filter="css"><span data-title="css">css</span></a></li>
-							<li><a href="#portfolio_filter" class="filter shutter" data-filter="wordpress"><span data-title="wordpress">wordpress</span></a></li>
-							<li><a href="#portfolio_filter" class="filter shutter" data-filter="opera"><span data-title="opera">opera</span></a></li>
-							
+						<ul id="portfolio_filter" class="option-set">
+						 
+							<li class="filter shutter" data-filter="all" title="no filter"><span data-title="all">all</span></li>
+							<li class="filter shutter" data-filter="jquery" title="filter: jquery"><span data-title="jquery">jquery</span></li>
+							<li class="filter shutter" data-filter="java" title="filter: java"><span data-title="java">java</span></li>
+							<li class="filter shutter" data-filter="css" title="filter: css"><span data-title="css">css</span></li>
+							<li class="filter shutter" data-filter="wordpress" title="filter: wordpress"><span data-title="wordpress">wordpress</span></li>
+							<li class="filter shutter" data-filter="opera" title="filter: opera"><span data-title="opera">opera</span></li>
+						
 							<li><button type="button" class="btn btn-primary btn-xs hidden-xs hidden-sm" data-toggle="cols">2/3 columns</button></li>
 							<!-- NB: if You set .img-responsive style then image to shiver with hover on previous image -->
 							<li><button type="button" class="btn btn-primary btn-xs hidden-xs hidden-sm" data-toggle="imgs-resp">img responsive</button></li>
@@ -272,7 +270,7 @@
 						</div>
 						<!--//grid cell-->
 						
-						<div class="col-12 col-md-6 col-lg-6 mix opera javascript">
+						<div class="col-12 col-md-6 col-lg-6 mix opera">
 							<a href="https://github.com/webcane/opera.widget.MyWords">
 								<img src="images/opera_widget_mywords.jpg" class="img-responsive" alt="opera widget MyWords!">
 							</a>
@@ -335,22 +333,22 @@
 								<table class="table">
 									<tbody>
 										<tr>
-											<!-- <td><span class="glyphicon glyphicon-home"></span></td> -->
+											<td><!-- <span class="glyphicon glyphicon-home"></span> --></td>
 											<td>Russia, Voronezh</td>
 										</tr>
 										<tr>
-											<!-- <td><span class="glyphicon glyphicon-envelope"></span></td> -->
+											<td><!-- <span class="glyphicon glyphicon-envelope"></span> --></td>
 											<td>webcane<span>@</span>ya.ru
 											</td>
 										</tr>
 										<tr>
-											<!-- <td><span class="glyphicon glyphicon-phone"></span></td> -->
+											<td><!-- <span class="glyphicon glyphicon-phone"></span> --></td>
 											<td>+7&nbsp;<span>920</span>4031756
 											</td>
 										</tr>
 										<tr>
 											<!-- social icons -->
-											<!-- <td></td> -->
+											<td></td>
 											<td>
 												<div class="social-icons">
 													<!-- <div class="icon"> -->
@@ -367,11 +365,17 @@
 							
 													<a href="https://github.com/webcane" class="icon" title="github">
 														<span class="symbol">circlegithubalt</span>
-													</a> <a href="http://webcane.wordpress.com/" class="icon"
+													</a> 
+													
+													<a href="http://webcane.wordpress.com/" class="icon"
 														title="blog on wordpress"> <span class="symbol">circlewordpress</span>
-													</a> <a href="http://www.linkedin.com/in/webcane" class="icon"
+													</a> 
+													
+													<a href="http://www.linkedin.com/in/webcane" class="icon"
 														title="LinkedIn"> <span class="symbol">circlelinkedin</span>
-													</a> <a href="https://www.facebook.com/mikhail.niedre"
+													</a> 
+													
+													<a href="https://www.facebook.com/mikhail.niedre"
 														class="icon" title="facebook"> <span class="symbol">circlefacebook</span>
 													</a>
 							
@@ -401,9 +405,6 @@
 								<img src="http://maps.googleapis.com/maps/api/staticmap?center=50.980206,34.6291061&amp;zoom=5&amp;size=800x500&amp;maptype=roadmap&amp;markers=icon:http://chart.apis.google.com/chart?chst=d_map_pin_icon%26chld=home%7C52.0756889,39.2361645&amp;sensor=false" alt=""/>		
 							</div>
 						</div>
-						
-						
-						
 						
 					</div>
 				</div>

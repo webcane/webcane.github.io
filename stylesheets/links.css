@@ -5,7 +5,7 @@
 	@author Mikhail Niedre
 	@version 1.0
  */
-a.shutter {
+.shutter {
 	color: #7c65a5;
 	display: inline-block;
 	text-decoration: none;
@@ -18,16 +18,16 @@ a.shutter {
 	perspective-origin: 50% 50%;
 }
 
-a.shutter:hover {
+.shutter:hover {
 	color: #555555;
 }
 
-a.shutter:hover>span {
+.shutter:hover>span {
 	background: #7c65a5;
 	transform: translate3d(0px, 0px, -30px) rotateX(90deg);
 }
 
-a.shutter>span {
+.shutter>span {
 	display: block;
 	position: relative;
 	padding: 0 3px;
@@ -37,7 +37,7 @@ a.shutter>span {
 	text-shadow: none;
 }
 
-a.shutter>span:after {
+.shutter>span:after {
 	content: attr(data-title);
 	display: block;
 	position: absolute;
