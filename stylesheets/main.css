@@ -109,22 +109,17 @@ h4 {
 	background-repeat: no-repeat, no-repeat, no-repeat;
 	background-origin: padding-box, border-box, padding-box;
 	border-bottom: 1px solid transparent;
-	
-	background-image: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0) ),
+		
+	background-image: 
+		linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0) ),
 		linear-gradient(0deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) ),
 		radial-gradient(50% 100%, ellipse cover, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0) 50% );
-		
-	background-image: -o-linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0) ),
-		-o-linear-gradient(0deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.85) 50%, rgba(255, 255, 255, 0) ),
-		-o-radial-gradient(50% 100%, ellipse cover, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0) 50% );
-		
-	background-image: -moz-linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0) ),
-		-moz-linear-gradient(0deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) ),
-		-moz-radial-gradient(50% 100%, ellipse cover, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0) 50% );
-		
-	background-image: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0) ),
-		-webkit-linear-gradient(0deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) ),
-		-webkit-radial-gradient(50% 100%, ellipse cover, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0) 50% );
+			
+	/* use placeholder for prefixfree */	
+	background-image: 
+		-*-linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0) ),
+		-*-linear-gradient(0deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) ),
+		-*-radial-gradient(50% 100%, ellipse cover, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0) 50% );
 }
 
 hr {
@@ -439,13 +434,8 @@ hr {
 		.icon {
 			margin: 0;
 			float: left;
-			width: 60px;
 			line-height: 1.0;
 			color: #333;
-			
-			-webkit-transition-duration: 0.5s;
-			-moz-transition-duration: 0.5s;
-			-o-transition-duration: 0.5s;
 			transition-duration: 0.5s;	
 		}
 		
@@ -454,25 +444,14 @@ hr {
 		}
 	
 	
-		.symbol, a.symbol:before {
+		.symbol, .symbol:before {
 		    font-family: 'Mono Social Icons Font';
 		    font-size: 60px;
-		    	    
-		    -webkit-text-rendering: optimizeLegibility;
-		    -moz-text-rendering: optimizeLegibility;
-		    -ms-text-rendering: optimizeLegibility;
-		    -o-text-rendering: optimizeLegibility;
 		    text-rendering: optimizeLegibility;
-		    
-		    -webkit-font-smoothing: antialiased;
-		    -moz-font-smoothing: antialiased;
-		    -ms-font-smoothing: antialiased;
-		    -o-font-smoothing: antialiased;
 		    font-smoothing: antialiased;
-	
 		}
 		
-		a.symbol:before {
+		.symbol:before {
 		    content: attr(title);
 		    margin-right: 0.3em;
 		    /* font-size: 130%; */
@@ -558,6 +537,10 @@ hr {
 	#portfolio_grid .mix {
 		padding: 20px;
 	}
+	
+	.symbol, .symbol:before {
+		font-size: 40px;
+	}	
 
 }
 		
