@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>test appear</title>
+<link href="../stylesheets/bootstrap.min.css" type="text/css" rel="stylesheet">
+<link href="../stylesheets/animate.min.css" type="text/css" rel="stylesheet">
+<link href="../stylesheets/font-awesome.min.css" type="text/css" rel="stylesheet">
+<style type="text/css">
+	* {
+	  box-sizing: border-box; 
+	}
+	
+	html,body {
+		height: 100%;
+		/* The html and body elements cannot have any padding or margin. */
+		margin: 0;
+		padding: 0;	
+	}
+
+   h1 { color: black; }
+   
+   hr { border-top: 1px solid #428bca; }
+
+	/* Extra markup and styles for table-esque vertical and horizontal centering */
+	.site-wrapper {
+	  display: block;
+	  width: 100%;
+	  height: 100%; /* For at least Firefox */
+	  min-height: 100%;
+	  /* remove unnecessary gorizontal scroll */
+	  overflow: hidden;
+	}
+
+	#home {
+		position: relative;
+		display: table;
+		width: 100%;
+  		padding: 0 5%;
+		margin: 0;
+	 	background: #e7e7e7 url(../images/body-bg.png) 0 0 repeat;
+		/* background-color: red; */
+		height: 100vh;
+		overflow:hidden;
+	}
+
+	.welcome_footer {
+	  display: table-cell;
+	  vertical-align: bottom;
+ 	  text-align: center;
+	  font-size: 2em;
+	}
+
+ </style>
+<script src="../javascripts/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+jQuery(document).ready(function() {
+	  $('a.lock').click(function(){
+		  $(this).children("i").fadeOut(100, function () {
+		        $(this).removeClass('fa-lock').addClass('fa-unlock').fadeIn();
+		  });
+	  });
+});
+</script>
+</head>
+<body>	
+	<!-- site wrapper container -->
+	<div class="site-wrapper">
+		<section id="home">
+			<div class="welcome_footer">
+				<hr class="dash" />
+				<a href="#site" title="push lock to open the site" class="lock">
+					<i class="fa fa-lock"></i>
+				</a>
+			</div>
+			<!-- //.welcome_footer -->
+		</section>
+	</div>
+</body>
+</html>

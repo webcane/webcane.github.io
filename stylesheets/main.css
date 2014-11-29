@@ -1,8 +1,10 @@
 /* my custom styles */
+
+/* background-color: red; */
 	
 /*
-	Fonts
-*/	
+ *	Fonts
+ */	
 @import url(http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic);
 @import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700);
 @import url(http://fonts.googleapis.com/css?family=Chivo:900);
@@ -20,6 +22,11 @@
 
 
 /* LAYOUT STYLES */
+
+* {
+	box-sizing: border-box; 
+}
+	
 html,body {
 	height: 100%;
 	/* The html and body elements cannot have any padding or margin. */
@@ -35,6 +42,78 @@ html,body {
 	background: #90bee4;
 }
 
+	/* The Loader */
+
+	.loader-wrapper {
+	  position: fixed;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  margin: 0;
+	  max-width: none;
+	  height: 100vh;
+	  z-index: 110;
+	  overflow: hidden;
+	  background-color: #fff;
+	}
+	
+	/* Modernizr no-js fallback */
+	.loader-wrapper.no-js {
+		display: none;
+	}
+	
+	.loader {
+	    /* position */
+	    position: relative;
+	    top: 40%;
+	    z-index: 111;
+	    
+	    /* size */
+	    width: 40px;
+	    height: 40px;
+	    
+	    /* centering */
+	    margin: 40px auto; 
+	 
+	    /* style: sector */
+ 	    border-radius: 50%;
+ 	    border: 10px solid transparent;
+	    border-top: 10px solid rgba(0,0,0,0.2); 
+	
+	    /* opacity: 0.5; */
+	    
+	    /* animation: spin in a circle */
+	    animation: rota 2.5s infinite linear;
+	    -webkit-animation: rota 2.5s infinite linear;
+	}
+	
+	.loader:after {
+	    content: "";
+	    
+	    /* position */
+	    position: absolute;
+ 	    top: -20px;
+ 	    margin: 20px auto;
+	    
+	    /* style: track */
+ 	    border-radius: 50%;
+ 	    border: 10px solid transparent;
+	    box-shadow: 0 0 0 10px rgba(0,0,0,0.05); 
+	}
+	
+	/* Animation */
+	@-webkit-keyframes rota {
+	    from { }
+	    to { -webkit-transform: rotate(360deg); }
+	}
+	
+	@keyframes rota {
+	    from { }
+	    to { transform: rotate(360deg); }
+	}
+
+
+
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
   display: block;
@@ -43,9 +122,6 @@ html,body {
   min-height: 100%;
   /* remove unnecessary gorizontal scroll */
   overflow: hidden;
-}
-.site-wrapper-inner {
-
 }
 
 /* links */
@@ -120,14 +196,19 @@ h4 {
 		-*-linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0) ),
 		-*-linear-gradient(0deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) ),
 		-*-radial-gradient(50% 100%, ellipse cover, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0) 50% );
+			
+	background-image: 
+		-webkit-linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0) ),
+		-webkit-linear-gradient(0deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) ),
+		-webkit-radial-gradient(50% 100%, ellipse cover, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0) 50% );
 }
 
-hr {
+/* hr {
 	height: 50px;
 	line-height: 1px;
 	margin: -40px 0 50px;
 	border: none;
-}
+} */
 
 .page_section {
 	
@@ -140,11 +221,9 @@ hr {
 	position:relative;
 	padding:0;
 	background: #e7e7e7 url(../images/body-bg.png) 0 0 repeat;
+	height: 100vh;
+	height: 100vh;
 }
-
-	.home_container {
-		margin:0 auto;
-	}
 	
 	#home .welcome_logo {
 		position: relative;
@@ -171,16 +250,44 @@ hr {
 	
 	/* Set the fixed height of the footer here */
 	.welcome_footer {
-		margin-top: -80px;
-		height: 80px;
-		
 		position: relative;
 		z-index: 2;
-		text-align: center;
+		margin-top: -60px;
+		height: 60px;
 	}
 	
 	.welcome_footer hr {
 		margin: 0;
+		height: 50px;
+		line-height: 1px;
+		border-top: none;
+	}
+
+	
+	.welcome_footer .lock {
+		position: relative;
+		display: block;
+		z-index: 3;
+		margin-bottom: -40px;
+		height: 20px;
+	}
+	
+	.lock a i {
+		cursor: default;
+		color: #878787;
+		opacity: 0.8;
+		
+		transition: all 1s ease;
+		-webkit-transition: all 1s ease;
+	}
+	
+	.lock a i:hover {
+		cursor: pointer;
+		/* font-size: 18px; */
+		transform: scale(1.3);
+		-webkit-transform: scale(1.3);
+		color: #878787;
+		opacity: 1;
 	}
 	  
 	/* letters_wave */
@@ -188,20 +295,19 @@ hr {
 		font-size: 11px;
 		font-weight: 200;
 		text-transform: uppercase;
-		text-align: center;
 		color: #878787;
+		padding-top: 4px;
+		font-family: 'PT Sans', sans-serif;
 	}
-/* 	a.letters_wave:hover { */
-/* 		color: #7c65a5; */
-/* 	} */
-	.letters_wave > span {
+
+	/* add space between words */
+	.letters_wave > span > span {
 	  	margin: 0 4px 0;
 	}
-	.letters_wave > span > span {
-	    display: inline-block;
-	}
 	
-
+	.letters_wave > span > span > span {
+	  	padding: 0 1px;
+	}	
 
 /* ___________________ //About ___________________ */
 
@@ -307,6 +413,7 @@ hr {
 		margin: 0;		
 		padding: 80px 40px;
 	}
+
 	
 	#portfolio_grid .mix a {
 		/* important for transform scaled images */
@@ -318,8 +425,8 @@ hr {
 	
 	#portfolio_grid .mix img {
 		display: block;
-		/* показать изображение во всю ширину, ничего не скрывая */
-		/* side-effect подрагивание в следующих колонках при наведении */
+		/* пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ */
+		/* side-effect пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ */
 		/* width: 100%; */
 		/* max-width: 100%; */
 		/* background-position: top center; */

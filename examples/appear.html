@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>test appear</title>
+<link href="../stylesheets/bootstrap.min.css" type="text/css" rel="stylesheet">
+<link href="../stylesheets/animate.min.css" type="text/css" rel="stylesheet">
+<!-- <link href="stylesheets/main.css" type="text/css"  rel="stylesheet"> -->
+<style type="text/css">
+	* {
+	  box-sizing: border-box; 
+	}
+	
+	html,body {
+		height: 100%;
+		/* The html and body elements cannot have any padding or margin. */
+		margin: 0;
+		padding: 0;	
+	}
+
+   h1 { color: black; }
+   
+   
+	/* The Loader */
+	.loader-wrapper {
+	  position: fixed;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  margin: 0;
+	  max-width: none;
+	  height: 100vh;
+	  z-index: 110;
+	  overflow: hidden;
+	  background-color: #fff;
+	}
+	
+	/* Modernizr no-js fallback */
+	.loader-wrapper.no-js {
+		display: none;
+	}
+	
+	.loader {
+	    /* position */
+	    position: relative;
+	    top: 40%;
+	    z-index: 111;
+	    
+	    /* size */
+	    width: 40px;
+	    height: 40px;
+	    
+	    /* centering */
+	    margin: 40px auto; 
+	 
+	    /* style: sector */
+ 	    border-radius: 50%;
+ 	    border: 10px solid transparent;
+	    border-top: 10px solid rgba(0,0,0,0.2); 
+	
+	    /* opacity: 0.5; */
+	    
+	    /* animation: spin in a circle */
+	    animation: rota 2.5s infinite linear;
+	    -webkit-animation: rota 2.5s infinite linear;
+	}
+	
+	.loader:after {
+	    content: "";
+	    
+	    /* position */
+	    position: absolute;
+ 	    top: -20px;
+ 	    margin: 20px auto;
+	    
+	    /* style: track */
+ 	    border-radius: 50%;
+ 	    border: 10px solid transparent;
+	    box-shadow: 0 0 0 10px rgba(0,0,0,0.05); 
+	}
+	
+	/* Animation */
+	@-webkit-keyframes rota {
+	    from { }
+	    to { -webkit-transform: rotate(360deg); }
+	}
+	
+	@keyframes rota {
+	    from { }
+	    to { transform: rotate(360deg); }
+	}
+
+	/* Extra markup and styles for table-esque vertical and horizontal centering */
+	.site-wrapper {
+	  display: block;
+	  width: 100%;
+	  height: 100%; /* For at least Firefox */
+	  min-height: 100%;
+	  /* remove unnecessary gorizontal scroll */
+	  overflow: hidden;
+	}
+
+#home {
+	overflow:hidden;
+	position:relative;
+	padding:0;
+ 	background: #e7e7e7 url(../images/body-bg.png) 0 0 repeat;
+	/* background-color: red; */
+	height: 100vh;
+}
+
+	.home_container {
+		margin:0 auto;
+	}
+	
+
+	#home .welcome_logo {
+		position: relative;
+		z-index: 1;
+		text-align: center;
+/* 		background-color: red; */
+	}
+	
+	#backlight {
+		background: transparent url(../images/highlight-bg.jpg) 50% 0 no-repeat;
+		min-height: 100%;
+		height: auto !important;
+		height: 100%;
+	}
+	
+	.logo {
+		width: 100%;
+		/* calculate padding via script automatically depends on windows size */
+		/* padding: 50px 0 110px 0; */
+		height: 400px;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-image: url(../images/CaneFish.png);
+	}
+ </style>
+<script src="../javascripts/jquery.min.js" type="text/javascript"></script>
+<script src="../javascripts/jquery.appear.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+jQuery(window).load(function () {
+	console.log('00');
+	setTimeout('init()', 3000);
+	console.log('03');
+});
+
+function init() {
+	hideLoader();
+	loadAppear();
+}
+function hideLoader() {
+	console.log('прошло 3 секунды');
+	$(".loader-wrapper .loader").fadeOut();
+	$(".loader-wrapper").fadeOut("slow");
+}
+
+function loadAppear() {
+	console.log('1');
+	console.log($('.animated.fade'));
+    $('.animated.fade').appear(function () {
+        var el = $(this);
+    	console.log('2');
+        var animation = el.data('animation');
+        var delay = el.data('delay');
+        if (delay) {
+            setTimeout(function () {
+                el.addClass(animation);
+                el.addClass('in');
+            }, delay);
+        	console.log('d');
+        } else {
+            el.addClass(animation);
+            el.addClass('in');
+        	console.log('nd');
+        }
+    });
+}
+
+jQuery(document).ready(function() {
+	
+	// hide elements for animation
+	$('.animated').addClass('fade');
+	  
+	
+    
+    welcomeVerticalCenter();
+});
+
+jQuery(window).resize(function(){
+	welcomeVerticalCenter();
+});
+
+//Welcome Block Vertical Align
+function welcomeVerticalCenter() {
+	var body_h = $(window).height();
+	var container_h = $('.welcome_logo').height();	
+	var marg_top = Math.abs((body_h - container_h)/2);
+	var marg_top_offset = 60;	
+	$('.welcome_logo').css('padding-top', marg_top - marg_top_offset);
+	$('.welcome_logo').css('padding-bottom', marg_top + marg_top_offset);
+}
+</script>
+</head>
+<body>
+
+    <!-- .LOADER -->
+   	<div class="loader-wrapper">  
+		<div class="loader"></div>
+	</div>
+	
+	<!-- site wrapper container -->
+	<div class="site-wrapper">
+		<section id="home">
+<!-- 			<div class="home_container"> -->
+				<div class="welcome_logo" id="backlight">
+					<div class="logo animated" data-animation="bounceInDown" data-delay="10"></div>
+				</div>
+				
+				<div class="welcome_footer">
+					<hr class="dash animated" data-animation="bounceInUp" data-delay="600" />
+	
+					<a href="#about" title="open site" class="letters_wave"> 
+						<span id="word_1">
+							<span class="animated" data-animation="bounceInUp" data-delay="400">c</span>
+							<span class="animated" data-animation="bounceInUp" data-delay="300">a</span>
+							<span class="animated" data-animation="bounceInUp" data-delay="800">n</span>
+							<span class="animated" data-animation="bounceInUp" data-delay="200">e</span>
+						</span>
+						<span id="word_2">
+							<span class="animated" data-animation="bounceInUp" data-delay="1200">o</span>
+							<span class="animated" data-animation="bounceInUp" data-delay="500">n</span>
+						</span>
+						<span id="word_3">
+							<span class="animated hiding" data-animation="bounceInUp" data-delay="300">g</span>
+							<span class="animated hiding" data-animation="bounceInUp" data-delay="1400">i</span>
+							<span class="animated hiding" data-animation="bounceInUp" data-delay="900">t</span>
+							<span class="animated hiding" data-animation="bounceInUp" data-delay="400">h</span>
+							<span class="animated hiding" data-animation="bounceInUp" data-delay="800">u</span>
+							<span class="animated hiding" data-animation="bounceInUp" data-delay="1000">b</span>
+						</span> 
+						<span id="word_4"> 
+							<span class="animated hiding" data-animation="bounceInUp" data-delay="900">p</span>
+							<span class="animated hiding" data-animation="bounceInUp" data-delay="1200">a</span>
+							<span class="animated hiding" data-animation="bounceInUp" data-delay="400">g</span>
+							<span class="animated hiding" data-animation="bounceInUp" data-delay="800">e</span>
+							<span class="animated hiding" data-animation="bounceInUp" data-delay="1400">s</span>
+						</span> 
+						<!-- <span class="icon-chevron-down"></span> -->
+					</a>
+				</div> <!-- //.welcome_footer -->
+<!-- 			</div> -->
+			
+			
+		</section>
+	</div>
+	<!-- //.site-wrapper container -->
+
+<!-- <section class="intro">  
+  <div class="content">
+    <h1 class="animated" data-animation="bounceInDown">full screen sections</h1>
+    <p>
+    	<span class="animated" data-animation="bounceInUp" data-delay="1000">The height is set to 90vh.</span>
+    	<span class="animated" data-animation="bounceInRight" data-delay="1000">Simple test of 
+    		<a href="http://morr.github.io/appear.html">jquery.appear</a> plugin.</span>
+    </p>
+  </div>
+</section> -->
+
+</body>
+</html>
